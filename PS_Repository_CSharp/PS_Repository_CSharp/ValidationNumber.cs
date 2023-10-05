@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 namespace PS_Repository_CSharp
 {
 	public class ValidationNumber
@@ -19,3 +20,4 @@ namespace PS_Repository_CSharp
 	}
 }
 
+*/
