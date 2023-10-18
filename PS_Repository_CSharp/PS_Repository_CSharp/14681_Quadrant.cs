@@ -1,0 +1,31 @@
+﻿//using System;
+//namespace PS_Repository_CSharp
+//{
+//	public class _4681_Quadrant
+//	{
+//		static void Main(string[] args)
+//		{
+//			int x = int.Parse(Console.ReadLine());
+//			int y = int.Parse(Console.ReadLine());
+
+//			if(x > 0 && y > 0)
+//			{
+//                Console.WriteLine("1");
+//            }
+//			else if(x > 0 && y < 0)
+//			{
+//                Console.WriteLine("4");
+//            }
+//			else if(x < 0 && y < 0)
+//			{
+//                Console.WriteLine("3");
+//            }
+//			else
+//			{
+//                Console.WriteLine("2");
+//            }
+			
+//		}
+//	}
+//}
+
