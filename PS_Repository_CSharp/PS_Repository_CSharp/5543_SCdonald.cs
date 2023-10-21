@@ -6,26 +6,28 @@
 //	{
 //		static void Main(String[] args)
 //		{
-//			string input = Console.ReadLine();
-//			string[] hamburger = input.Split(' ');
-//			string[] drink = input.Split(' ');
+//			int[] hamburger = new int[3];
+//			int[] drink = new int[2];
 
-//			var a = int.Parse(hamburger[0]);
-//			var b = int.Parse(hamburger[1]);
-//			var c = int.Parse(hamburger[2]);
-//			var d = int.Parse(drink[0]);
-//			var e = int.Parse(drink[1]);
+//			for(var i = 0; i < 3; i++)
+//			{
+//				hamburger[i] = int.Parse(Console.ReadLine());
+//			}
 
-//            var minHamberger = hamburger.Min();
-//            var minDrink = drink.Min();
+//			for(var i = 0; i < 2; i++)
+//			{
+//				drink[i] = int.Parse(Console.ReadLine());
+//			}
 
-//            var result = minHamberger + minDrink;
-	
-//			Console.WriteLine(result);
-		
+//			Array.Sort(hamburger);
+//			Array.Sort(drink);
+
+//			Console.WriteLine(hamburger[0] + drink[0] - 50);
+			
 //		}
 //	}
 //}
 
-////상근날드 풀다 말았다 아놔 다시 온다 . . . 
-
+///*
+// * Array.Sort() : 오름차순으로 배열 정렬 ( 가장 싼 메뉴가 제일 앞에온다 [0] )
+//*/
