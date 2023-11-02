@@ -6,20 +6,25 @@
 //		static void Main(String[] args)
 //		{
 //			string input = Console.ReadLine();
-//            var test = 0;
-
-//            for (var i = 0; i < 100; i++)
+//			int len = input.Length;
+//			int i = 0;
+//			// 0 ~ 9, 10 ~ 19
+//			// 10으로 나눈 줄 수 만큼 반복
+//			while(i <= len / 10)
 //			{
-//                string input_1 = input.Substring(test , test + 10);
-//                Console.WriteLine(input_1);
-//				test += 10;
+//				string input_1 = input;
 
-//				if(test < input.Length / 10 )	
-//					return;
-//            }
-
+//				if ((i + 1) * 10 - 1 >= len)
+//				{
+//					Console.WriteLine(input_1.Substring(i * 10, len - (i * 10)));
+//				}
+//				else
+//				{
+//                    Console.WriteLine(input_1.Substring(i * 10, 10));
+//                }
+//				i++;
+//			}
 //		}
 //	}
 //}
 
-//풀다말았듬 . .
