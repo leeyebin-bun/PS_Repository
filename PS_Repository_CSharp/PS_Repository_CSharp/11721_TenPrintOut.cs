@@ -10,7 +10,7 @@
 //			int i = 0;
 //			// 0 ~ 9, 10 ~ 19
 //			// 10으로 나눈 줄 수 만큼 반복
-//			while(i <= len / 10)
+//			while (i <= len / 10)
 //			{
 //				string input_1 = input;
 
@@ -20,8 +20,8 @@
 //				}
 //				else
 //				{
-//                    Console.WriteLine(input_1.Substring(i * 10, 10));
-//                }
+//					Console.WriteLine(input_1.Substring(i * 10, 10));
+//				}
 //				i++;
 //			}
 //		}
