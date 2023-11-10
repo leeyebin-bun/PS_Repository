@@ -1,31 +1,34 @@
-﻿//using System;
-//namespace PS_Repository_CSharp
-//{
-//	public class _978_DecimalFind
-//	{
-//		static void Main(String[] args)
-//		{
-//			int input = int.Parse(Console.ReadLine());
+﻿using System;
+namespace PS_Repository_CSharp
+{
+	public class _978_DecimalFind
+	{
+		static void Main(String[] args)
+		{
+			int input = int.Parse(Console.ReadLine());
+			string word = Console.ReadLine();
+			string[] input_2 = word.Split();
+			int answer = input;
 
-//			string[] input_2 = Console.ReadLine().Split(' ');
-//			int answer = 0;
-
-//			int a = int.Parse(input_2[0]);
-//            int b = int.Parse(input_2[1]);
-//            int c = int.Parse(input_2[2]);
-//            int d = int.Parse(input_2[3]);
-//			
-//                if (a % 2 != 0 && a != 1)
-//                    answer += 1;
-//                if (b % 2 != 0 && b != 1)
-//                    answer += 1;
-//                if (c % 2 != 0 && c != 1)
-//                    answer += 1;
-//                if (d % 2 != 0 && d != 1)
-//                    answer += 1;             
-			
-//			Console.WriteLine(answer);
-//		}
-//	}
-//}
+			for(int i = 0; i < input; i++)
+			{
+				if (int.Parse(input_2[i]) == 1) // 1은 소수에서 제외
+				{
+					answer--;
+					continue;
+				}
+				for(int j = 2; j < int.Parse(input_2[i]); j++)
+				{
+					if (int.Parse(input_2[i]) % j == 0) // 나머지가 0이 나오면 소수가 아니므로 0이 나오는 수 제외
+					{
+						answer--;
+						break;
+					}
+				}
+			}
+		
+			Console.WriteLine(answer);
+		}
+	}
+}
 
