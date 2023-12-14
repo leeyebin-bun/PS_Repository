@@ -20,7 +20,7 @@
 //				// 두 컵을 교환한다.
 //				// 1 2 일때
 //				int temp = balls[cup_1];
-//				// temp = 1 , 공이 들어있다.
+//				// temp = 1
 //				balls[cup_1] = balls[cup_2];
 //                // balls[1] = balls[2]
 //                // balls[cup_2]의 값을 balls[cup_1]에 할당한다.
