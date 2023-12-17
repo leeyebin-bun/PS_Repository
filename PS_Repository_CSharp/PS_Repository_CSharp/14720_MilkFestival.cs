@@ -1,30 +1,40 @@
-﻿//using System;
-//namespace PS_Repository_CSharp
-//{
-//	public class _4720_MilkFestival
-//	{
-//		static void Main(String[] args)
-//		{
+﻿using System;
+using static System.Net.Mime.MediaTypeNames;
 
-//			/*
-//			int milk = int.Parse(Console.ReadLine());
-//            string[] input = Console.ReadLine().Split(' ');
-//            int[] store = new int[3]{ 0, 1, 2 };
-//			int sum = 0;
+namespace PS_Repository_CSharp
+{
+	public class _4720_MilkFestival
+	{
+        static void Main(String[] args)
+        {
 
-//			for (int i = 0; i < milk; i++)
-//			{ 
+            int storeCount = int.Parse(Console.ReadLine());
+            List<int> stores = Console.ReadLine().Split().Select(int.Parse).ToList();
+            int wantToDrink = 0;
+            int didDrink = 0;
 
-//				if (int.Parse(input[0]) == store[0])
-//				{
-//					sum++;
+            for (int currentStoreIndex = 0; currentStoreIndex < storeCount; currentStoreIndex++)
+            {
+                int milk = stores[currentStoreIndex];
 
-//				}
+                if(milk == didDrink)
+                {
+                    wantToDrink++;
 
-//			}
-//			*/
+                    if(didDrink == 2)
+                    {
+                        didDrink = 0;
+                    }
+                    else
+                    {
+                        ++didDrink;
+                    }
+                    
+                }
+            }           
 
-//		}
-//	}
-//}
+            Console.WriteLine(wantToDrink);
+        }
+	}
+}
 
