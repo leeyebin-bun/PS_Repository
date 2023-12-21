@@ -32,12 +32,10 @@
 //				}
 //				else if (a != b && b != c || a != c)
 //				{
-//                    Console.WriteLine("Scalene");
-//                }
+//					Console.WriteLine("Scalene");
+//				}
 
-				
-				
-//            }
+//			}
 //		}
 //	}
 //}
