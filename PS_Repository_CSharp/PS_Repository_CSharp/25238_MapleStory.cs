@@ -7,16 +7,16 @@
 //		{
 //			string[] input = Console.ReadLine().Split(' ');
 
-//			int a = int.Parse(input[0]);
-//			int b = int.Parse(input[1]);
+//			float a = int.Parse(input[0]);
+//			float b = int.Parse(input[1]);
 
-//			int damage = 100 * a - a * b;
+//			float damage = a - (a * b / 100);
 
-
-//            if (damage > 100)
+//            if (damage >= 100)
 //				Console.WriteLine(0);
 //			else
 //				Console.WriteLine(1);
+			
 //		}
 //	}
 //}
